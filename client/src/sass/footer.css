@@ -16,7 +16,7 @@
   flex-direction: column;
 }
 .footer__contact .logo {
-  color: var(--theme-color-additional2А);
+  color: var(--theme-color-additional2);
   margin-bottom: 26px;
 }
 .footer__social {
