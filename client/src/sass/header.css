@@ -1,0 +1,121 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+}
+.header__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.logo {
+  font-family: Ribeye;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: var(--theme-color-base);
+}
+.menu__block {
+  width: 100%;
+  height: var(--header-height-sm);
+  align-items: center;
+  justify-content: center;
+}
+.menu__btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  z-index: 10;
+  width: var(--menu-btn-line-width);
+  height: calc(5 * var(--menu-btn-line-height));
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+.menu__btn-line {
+  position: absolute;
+  width: 100%;
+  height: var(--menu-btn-line-height);
+  background-color: var(--theme-color-base);
+  transition: 0.5s;
+}
+.menu__btn-line--top {
+  top: 0;
+}
+.menu__btn-line--mid {
+  top: 50%;
+}
+.menu__btn-line--bot {
+  top: 100%;
+}
+.menu__btn--is-active .menu__btn-line--top {
+  transform: rotate(405deg) translate3d(6px, 5px, 0);
+  transition: 0.5s;
+}
+.menu__btn--is-active .menu__btn-line--mid {
+  transform: rotate(-45deg);
+  background: none;
+  transition: 0.5s;
+}
+.menu__btn--is-active .menu__btn-line--bot {
+  transform: rotate(315deg) translate3d(6px, -5px, 0);
+  transition: 0.5s;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.5s ease;
+  transform: translatex(100%);
+  position: fixed;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.96);
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+.menu__list--is-open {
+  width: 100%;
+  transform: translatex(0%);
+}
+.menu__item {
+  transition: 0.5s;
+}
+.menu__item--is-visible {
+  margin: 2.5% 0 2.5% 0;
+  border: 1px solid var(--theme-color-additional1);
+  border-radius: 5px;
+  width: 50%;
+  text-align: center;
+  background-color: var(--theme-color-additional1);
+  transition: 0.5s;
+}
+.menu__link {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--theme-color-base);
+  transition: 0.5s;
+}
+.button {
+  display: flex;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.5;
+  color: (var(--theme-color-base));
+  background-color: var(--theme-color-additional1);
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+.header__navigation-button {
+  display: none;
+}

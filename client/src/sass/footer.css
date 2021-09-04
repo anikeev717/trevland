@@ -1,0 +1,100 @@
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__services {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 35px 0 35px;
+}
+.footer__contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer__contact .logo {
+  color: var(--theme-color-additional2А);
+  margin-bottom: 26px;
+}
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 51px;
+  width: 100%;
+}
+.footer__text {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  color: var(--theme-color-additional2);
+  margin-bottom: 9.8px;
+}
+.footer__services-list {
+  text-align: center;
+}
+.footer__services-list .footer__text {
+  font-weight: 500;
+  line-height: 1.5;
+}
+.footer__services-item .footer__text {
+  transition: 0.5s;
+}
+.footer__services-item {
+  margin-bottom: 20px;
+}
+.footer__sub .footer__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+}
+.footer__form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 42px;
+  width: 333px;
+}
+.footer__email {
+  width: 195px;
+  height: 44px;
+  border-radius: 5px;
+  border: 1px solid #e5e5e5;
+  position: relative;
+  text-overflow: ellipsis;
+  transition: 0.5s;
+}
+.footer__email:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+.footer__email:focus::-moz-placeholder {
+  color: transparent;
+}
+.footer__email:focus:-moz-placeholder {
+  color: transparent;
+}
+.footer__email:focus:-ms-input-placeholder {
+  color: transparent;
+}
+.footer__email::placeholder {
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  color: var(--theme-color-additional2);
+}
+.footer__button {
+  width: 103px;
+  height: 44px;
+  font-family: Roboto;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  border: none;
+}

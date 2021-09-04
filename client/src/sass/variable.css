@@ -1,0 +1,24 @@
+:root {
+  --theme-color-base: #fff;
+  --theme-color-additional1: #c9453b;
+  --theme-color-additional2: #000;
+
+  --mq-size-sm: 576px;
+  --mq-size-md: 768px;
+  --mq-size-lg: 992px;
+  --mq-size-xl: 1200px;
+
+  --header-height-sm: 70px;
+  --header-height-md: 90px;
+  --header-height-lg: 100px;
+  --header-height-xl: 100px;
+  --menu-btn-line-height: 3px;
+  --menu-btn-line-width: calc(10 * var(--menu-btn-line-height));
+}
+
+.container {
+  --container-width: 100%;
+  width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 15px;
+}
